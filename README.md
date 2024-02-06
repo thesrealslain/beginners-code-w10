@@ -1,6 +1,6 @@
 # beginners-code-w10
 
-This is the continuation of the code journey, week two's content.
+This is the continuation of the coding education, week ten's content.
 
 ## Contents
 
