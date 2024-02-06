@@ -58,7 +58,7 @@ class Square:
             self.fill_colour = colour
 
     def setOutlineColour(self, colour):
-        colours = ["black", "white", "red", "green", "blue"]  # Add more valid colours as needed
+        colours = ["black", "white", "red", "green", "blue"]  
         if colour in colours:
             self.outline_colour = colour
             print(f"Outline colour set to: {self.outline_colour}")
@@ -163,7 +163,7 @@ class Square:
             self.fill_colour = colour
 
     def setOutlineColour(self, colour):
-        colours = ["black", "white", "red", "green", "blue"]  # Add more valid colours as needed
+        colours = ["black", "white", "red", "green", "blue"]  
         if colour in colours:
             self.outline_colour = colour
             print(f"Outline colour set to: {self.outline_colour}")
@@ -175,7 +175,6 @@ class Square:
         center_y = (self.p1.getY() + self.p2.getY()) / 2
         return MyPoint(center_x, center_y)
 
-# Test the getCenter method with specific coordinates
 square = Square(MyPoint(110, 30), 50)
 print(f"The centre of the square is {square.getCenter()}")  # Output: MyPoint(135.0, 55.0)
 
@@ -246,7 +245,6 @@ def testCircle():
 
     print(circle)  # Output: MyCircle(centre: MyPoint(60, 30), radius: 30)
 
-# Test the MyCircle class using the testCircle function
 testCircle()
 
 """
@@ -337,7 +335,7 @@ class Square:
         square.draw(win)
 
     def setOutlineColour(self, newColour):
-        validColours = ["black", "white", "red", "green", "blue", "yellow"]  # Add more valid colours if needed
+        validColours = ["black", "white", "red", "green", "blue", "yellow"]  
         if newColour.lower() in validColours:
             self.outlineColour = newColour.lower()
             print(f"Changing square's outline colour to {newColour}")
@@ -356,7 +354,6 @@ def testSquare():
         win = GraphWin("Test Square", 600, 600)
         square = Square(200, Point(300, 300), fillColour="red")
 
-        # Testing scale method
         square.scale(2)  # Scale up by a factor of 2
         square.draw(win)
 
